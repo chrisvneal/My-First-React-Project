@@ -1,11 +1,15 @@
+import React from "react";
+// import { React.Component } from 'react'
 import "./App.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>My First React Project</h1>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>My First React Projects</h1>
+      </div>
+    );
+  }
 }
 
 export default App;
