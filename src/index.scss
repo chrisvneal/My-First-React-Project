@@ -1,0 +1,35 @@
+$color-main: #292828;
+$color-main--light: lighten($color-main, 70%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   font-family: sans-serif;
+}
+
+.list {
+
+  margin-bottom: 20px;
+  border-bottom: 1px solid $color-main--light;
+  background: lighten(lightgray, 12%);
+  ul {
+    list-style-type: none;
+ li {
+   margin-bottom: 10px;
+
+
+ }
+  }
+
+  h2 {
+    color: $color-main;
+    margin-bottom: 10px;
+  }
+  
+}
+
+
+

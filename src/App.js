@@ -1,18 +1,35 @@
 import React from "react";
-import "./App.scss";
-import AuthorCard from "./Components/AuthorCard";
-import Header from "./Components/Header";
+import List from "./List";
 
 class App extends React.Component {
   state = {
-    name: "Chris",
-    type: "Billpay",
+    parents: [
+      {
+        name: "Michele",
+        id: 578,
+      },
+      {
+        name: "Vaughn",
+        id: 789,
+      },
+    ],
+    companies: [
+      {
+        name: "HHB",
+        id: 678,
+      },
+      {
+        name: "BCI Security",
+        id: 991,
+      },
+    ],
   };
+
   render() {
     return (
       <div className="App">
-        <Header />
-        <AuthorCard name={this.state.name} type={this.state.type} />
+        <List list={this.state.parents} title="Parents" />
+        <List list={this.state.companies} title="Companies" />
       </div>
     );
   }
